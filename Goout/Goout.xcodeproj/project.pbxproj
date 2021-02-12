@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		BD53844F25D3E52D002E9BD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD53844E25D3E52D002E9BD7 /* AppDelegate.swift */; };
 		BD53845125D3E52D002E9BD7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD53845025D3E52D002E9BD7 /* SceneDelegate.swift */; };
-		BD53845325D3E52D002E9BD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD53845225D3E52D002E9BD7 /* ViewController.swift */; };
+		BD53845325D3E52D002E9BD7 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD53845225D3E52D002E9BD7 /* SignInViewController.swift */; };
 		BD53845625D3E52D002E9BD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD53845425D3E52D002E9BD7 /* Main.storyboard */; };
 		BD53845825D3E52F002E9BD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD53845725D3E52F002E9BD7 /* Assets.xcassets */; };
 		BD53845B25D3E52F002E9BD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD53845925D3E52F002E9BD7 /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		BD53844B25D3E52D002E9BD7 /* Goout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Goout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD53844E25D3E52D002E9BD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD53845025D3E52D002E9BD7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BD53845225D3E52D002E9BD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BD53845225D3E52D002E9BD7 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		BD53845525D3E52D002E9BD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BD53845725D3E52F002E9BD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD53845A25D3E52F002E9BD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +56,39 @@
 		BD53844D25D3E52D002E9BD7 /* Goout */ = {
 			isa = PBXGroup;
 			children = (
+				BD99E9BF25D6897900E9F233 /* Model */,
+				BD99E9BE25D6897400E9F233 /* View */,
+				BD99E9BD25D6896900E9F233 /* Controller */,
 				BD53844E25D3E52D002E9BD7 /* AppDelegate.swift */,
 				BD53845025D3E52D002E9BD7 /* SceneDelegate.swift */,
-				BD53845225D3E52D002E9BD7 /* ViewController.swift */,
-				BD53845425D3E52D002E9BD7 /* Main.storyboard */,
 				BD53845725D3E52F002E9BD7 /* Assets.xcassets */,
-				BD53845925D3E52F002E9BD7 /* LaunchScreen.storyboard */,
 				BD53845C25D3E52F002E9BD7 /* Info.plist */,
 			);
 			path = Goout;
+			sourceTree = "<group>";
+		};
+		BD99E9BD25D6896900E9F233 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BD53845225D3E52D002E9BD7 /* SignInViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BD99E9BE25D6897400E9F233 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BD53845425D3E52D002E9BD7 /* Main.storyboard */,
+				BD53845925D3E52F002E9BD7 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BD99E9BF25D6897900E9F233 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD53845325D3E52D002E9BD7 /* ViewController.swift in Sources */,
+				BD53845325D3E52D002E9BD7 /* SignInViewController.swift in Sources */,
 				BD53844F25D3E52D002E9BD7 /* AppDelegate.swift in Sources */,
 				BD53845125D3E52D002E9BD7 /* SceneDelegate.swift in Sources */,
 			);
@@ -287,6 +311,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YT86278469;
 				INFOPLIST_FILE = Goout/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -306,6 +331,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YT86278469;
 				INFOPLIST_FILE = Goout/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
