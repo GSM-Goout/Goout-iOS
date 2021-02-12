@@ -56,11 +56,11 @@
 		BD53844D25D3E52D002E9BD7 /* Goout */ = {
 			isa = PBXGroup;
 			children = (
+				BD53844E25D3E52D002E9BD7 /* AppDelegate.swift */,
+				BD53845025D3E52D002E9BD7 /* SceneDelegate.swift */,
 				BD99E9BF25D6897900E9F233 /* Model */,
 				BD99E9BE25D6897400E9F233 /* View */,
 				BD99E9BD25D6896900E9F233 /* Controller */,
-				BD53844E25D3E52D002E9BD7 /* AppDelegate.swift */,
-				BD53845025D3E52D002E9BD7 /* SceneDelegate.swift */,
 				BD53845725D3E52F002E9BD7 /* Assets.xcassets */,
 				BD53845C25D3E52F002E9BD7 /* Info.plist */,
 			);
